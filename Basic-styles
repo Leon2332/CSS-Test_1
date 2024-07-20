@@ -1,0 +1,76 @@
+/*================================================
+            TABLE OF CONTENTS
+        1. Menu
+        2. Basic div container
+        3. Text styles
+        4. Image styles
+=================================================*/
+
+
+
+/*================================================
+        1. Menu
+        Used in header.
+=================================================*/
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+}
+
+
+
+
+
+
+/*================================================
+        2. Basic div container
+        Used on all pages and posts.
+=================================================*/
+
+.base-block {
+    display:block;
+    background-color: darkgray;
+    padding: 15px;
+    border: 1px;
+    border-color: rgb(88, 88, 88);
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px gray;
+}
+
+
+
+
+
+/*================================================
+        3. Text styles
+        Used on all pages and posts.
+=================================================*/
+
+.text-style {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+}
+
+
+
+
+
+/*================================================
+        4. Image styles
+        Used on all pages and posts.
+=================================================*/
+
+.imgage-style {
+    display: block;
+    overflow: hidden;
+    max-width: 500px;
+    height: auto;
+}
+
+.imgage-style:hover {
+    scale: 1.05;
+    transition: ease-in-out;
+}
+
+
