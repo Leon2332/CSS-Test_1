@@ -1,1 +1,1 @@
-This is a VS stidio test.
+This is a Visual Studio Code test.
