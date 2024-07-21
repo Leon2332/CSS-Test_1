@@ -4,6 +4,7 @@
         2. Basic div container
         3. Text styles
         4. Image styles
+        5. Columns
 =================================================*/
 
 
@@ -17,9 +18,25 @@
 =================================================*/
 
 .sticky-header {
+    width: 100%;
+    padding-top: 10px;
     position: sticky;
     top: 0;
+    color:darkred;
+    background-color:rgb(255, 255, 255);
 }
+
+.sticky-header ul{
+    display:inline-flex;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.sticky-header li{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 
 /*===============================================*/
 
@@ -34,13 +51,22 @@
 =================================================*/
 
 .base-block {
-    display:block;
-    background-color: darkgray;
-    padding: 15px;
-    border: 1px;
-    border-color: rgb(88, 88, 88);
+    display: block;
+    break-inside: avoid-column;
+    text-align: center;
+    max-width: 500px;
+    background-color: rgb(241, 241, 241);
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
     border-radius: 5px;
-    box-shadow: 10px 10px 5px gray;
+    box-shadow: 10px 10px 5px rgb(197, 197, 197);
+}
+
+.title-block {
+    display: block;
+    width: 100%;
 }
 
 /*===============================================*/
@@ -55,50 +81,68 @@
         Used on all pages and posts.
 =================================================*/
 
+.scroll-content-200 {
+    overflow-y: auto;
+    max-height: 150px;
+}
+
 .custom-text-style {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 13px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: darkred
 }
 
 p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 11px;
+    font-size: 13px;
+    text-align: left;
+    line-height: 16px;
 }
 
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: x-large;
     color:darkred;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
     color: darkred;
+    margin: 20px;
 }
 
 h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
     color: darkred;
+    margin: 20px;
 }
 
 h4 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: medium;
     color: darkred;
+    margin: 20px;
 }
 
 h5 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: medium;
     color: darkred;
+    margin: 20px;
 }
 
 h6 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: small;
     color: darkred;
+    margin: 20px;
 }
 
 /*===============================================*/
@@ -120,9 +164,26 @@ h6 {
     height: auto;
 }
 
-.imgage-style:hover {
+.imgage-style:hover img{
     scale: 1.05;
     transition: ease-in-out;
+}
+
+/*===============================================*/
+
+
+
+
+
+/*================================================
+        5. Columns
+        Used on all pages and posts.
+=================================================*/
+
+.column-style {
+    columns: 3;
+    column-width: 300px;
+    margin-bottom: 50px;
 }
 
 /*===============================================*/
